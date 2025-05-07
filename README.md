@@ -6,7 +6,31 @@ A responsive and intuitive web application that helps mentors and mentees connec
 https://mentorship-platform-frontend.netlify.app/
 
 📁 Project Structure
-<pre> mentorship-platform-Frontend-/ ├── index.html ├── login.html ├── register.html ├── profile.html ├── discover.html ├── requests.html ├── css/ │ ├── index.css │ ├── login.css │ ├── register.css │ ├── profile.css │ ├── discover.css │ └── requests.css ├── js/ │ ├── index.js │ ├── login.js │ ├── register.js │ ├── profile.js │ ├── discover.js │ ├── requests.js │ └── mockApi.js └── assets/ └── (images or icons if used) </pre>
+<pre> /
+├── index.html            // Homepage
+├── login.html            // User login
+├── register.html         // User registration
+├── profile.html          // User profile creation/editing
+├── discover.html         // Browse user profiles
+├── requests.html         // Send & receive mentorship requests
+│
+├── css/
+│   ├── index.css
+│   ├── login.css
+│   ├── register.css
+│   ├── profile.css
+│   ├── discover.css
+│   └── requests.css
+│
+├── js/
+│   ├── index.js
+│   ├── login.js
+│   ├── register.js
+│   ├── profile.js
+│   ├── discover.js
+│   ├── requests.js
+│   └── mockApi.js        // Handles mocked API behavior using localStorage
+ </pre>
 ✅ Features
 🔐 Authentication
    -Register and login with email/password
