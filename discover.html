@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Discover Mentors and Mentees</title>
+  <link rel="stylesheet" href="css/discover.css" />
+</head>
+<body>
+  <header class="banner">
+    <img src="https://images.unsplash.com/photo-1522202176988-66273c2fd55f" class="banner-img" alt="Banner" />
+    <div class="nav-overlay">
+      <nav>
+        <a href="index.html">Home</a>
+        <a href="profile.html">Profile</a>
+        <a href="requests.html">Requests</a>
+      </nav>
+    </div>
+    <div class="header-text">
+      <h1>Discover Mentors & Mentees</h1>
+    </div>
+  </header>
+
+  <main class="discover-container">
+    <section class="search-section">
+      <input type="text" id="searchInput" placeholder="Search by name..." />
+    </section>  
+    
+    <section class="filters-section">
+      <h3>Filter Users</h3>
+      <div class="filters">
+        <select id="roleFilter">
+          <option value="">All Roles</option>
+          <option value="Mentor">Mentor</option>
+          <option value="Mentee">Mentee</option>
+        </select>
+        <input type="text" id="skillsFilter" placeholder="Search by skill..." />
+        <input type="text" id="interestsFilter" placeholder="Search by interest..." />
+        <button id="applyFilters" class="filter-btn">Apply</button>
+        <button id="clearFilters" class="filter-btn">Clear</button>
+      </div>
+    </section>
+    
+    <section class="user-list-section">
+      <h2>Explore Users</h2>
+      <div id="userList" class="user-cards"></div>
+    </section>
+  </main>
+
+  <script type="module" src="js/discover.js"></script>
+</body>
+</html>

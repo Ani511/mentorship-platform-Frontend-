@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Edit Profile</title>
+  <link rel="stylesheet" href="css/profile.css" />
+</head>
+<body>
+  <header class="banner">
+    <img src="https://images.unsplash.com/photo-1506744038136-46273834b3fb" class="banner-img" alt="Banner" />
+    <div class="nav-overlay">
+      <nav>
+        <a href="discover.html">Discover</a>
+        <a href="requests.html">Requests</a>
+      </nav>
+    </div>
+    <div class="profile-header">
+      <img src="https://via.placeholder.com/100" alt="Profile Photo" class="profile-pic" />
+      <h2 class="profile-name">Edit Profile</h2>
+    </div>
+  </header>
+
+  <main class="profile-container">
+    <form id="profileForm" class="profile-form">
+      <div class="form-group">
+        <label for="bio">Bio</label>
+        <textarea id="bio" placeholder="Write something about yourself..." rows="3"></textarea>
+      </div>
+
+      <div class="form-group">
+        <label for="skills">Skills</label>
+        <input type="text" id="skills" placeholder="e.g., Web Development, UI/UX Design" />
+      </div>
+
+      <div class="form-group">
+        <label for="interests">Interests</label>
+        <input type="text" id="interests" placeholder="e.g., AI, Startups" />
+      </div>
+
+      <div class="form-group">
+        <label for="profile-pic-upload">Upload Profile Picture</label>
+        <input type="file" id="profile-pic-upload" accept="image/*" />
+      </div>
+
+      <div class="button-container">
+        <button type="submit">Save Changes</button>
+      </div>
+    </form>
+  </main>
+
+  <script src="js/profile.js"></script>
+</body>
+</html>
