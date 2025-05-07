@@ -1,7 +1,7 @@
-🧑‍🏫 Mentorship Matching Platform
+##🧑‍🏫 Mentorship Matching Platform
 A responsive and intuitive web application that helps mentors and mentees connect based on skills, interests, and goals. Built as a take-home assignment for a Frontend Engineer Intern role using vanilla HTML, CSS, and JavaScript — no frameworks or external libraries.
 
-🌐 Deployed Application
+##🌐 Deployed Application
 👉 Visit the Live Site
 https://mentorship-platform-frontend.netlify.app/
 
@@ -31,7 +31,7 @@ https://mentorship-platform-frontend.netlify.app/
 │   ├── requests.js
 │   └── mockApi.js        // Handles mocked API behavior using localStorage
  </pre>
-✅ Features
+##✅ Features
 🔐 Authentication
    -Register and login with email/password
    -Logout functionality
@@ -59,7 +59,7 @@ https://mentorship-platform-frontend.netlify.app/
 - **LocalStorage** (to simulate backend behavior)
 - **Netlify** (for deployment)
 
-🚀 Deployment
+##🚀 Deployment
 This project is deployed on Netlify. To deploy your own fork:
 
 Push your repo to GitHub
@@ -70,7 +70,7 @@ Deploy
 or
 Just open any HTML file in your browser (e.g. index.html) using VSCode Live Server or by double-clicking the file.
 
-📄 Documentation
+##📄 Documentation
 Approach:
 Built a multi-page vanilla frontend to simulate a real-world mentorship platform.
 Used localStorage to mimic backend operations like authentication, profile handling, and request exchange.
