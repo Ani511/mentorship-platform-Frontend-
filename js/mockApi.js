@@ -24,14 +24,14 @@ export function registerUser({ name, email, password, role }) {
 export function loginUser({ email, password }) {
   const user = users.find(u => u.email === email && u.password === password);
   if (!user) return { error: "Invalid credentials" };
-  localStorage.setItem("currentUser", JSON.stringify(user)); // Store currentUser in localStorage
+  localStorage.setItem("currentUser", JSON.stringify(user)); // To store currentUser in localStorage
   return { success: true };
 }
 
 export function getCurrentUser() {
-  return currentUser; // Return the current logged-in user
+  return currentUser; // to return the current logged-in user
 }
 
 export function logoutUser() {
-  localStorage.removeItem("currentUser"); // Log the user out by removing currentUser from localStorage
+  localStorage.removeItem("currentUser"); // to log the user out by removing currentUser from localStorage
 }

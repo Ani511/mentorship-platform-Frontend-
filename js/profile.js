@@ -16,7 +16,7 @@ let viewedUser = currentUser;
 
 if (viewUserId && viewUserId !== currentUser.id.toString()) {
   viewedUser = users.find(u => u.id.toString() === viewUserId);
-  profileForm.style.display = "none";  // hide form if viewing someone else
+  profileForm.style.display = "none"; 
   profileName.textContent = viewedUser.name + "'s Profile";
 } else {
   profileForm.style.display = "block";
@@ -53,6 +53,4 @@ if (profileForm && viewedUser.id === currentUser.id) {
     alert("Profile updated successfully!");
   });
 }
-
-// Clear viewUserId when page loads (so next time it’s your own)
 localStorage.removeItem("viewUserId");

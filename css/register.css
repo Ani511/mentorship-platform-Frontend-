@@ -29,7 +29,7 @@ input,
 select {
   display: block;
   width: 100%;
-  box-sizing: border-box; /* Ensures padding doesn't affect width */
+  box-sizing: border-box; 
   padding: 12px;
   margin: 12px 0;
   border: none;
@@ -37,7 +37,7 @@ select {
   background-color: #ffffff;
   color: #000;
   font-size: 1rem;
-  appearance: none; /* Makes select more consistent with input */
+  appearance: none; 
 }
 
 button {

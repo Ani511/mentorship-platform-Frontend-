@@ -159,7 +159,7 @@ button {
   border: none;
   transition: background-color 0.3s ease, transform 0.3s ease;
   margin-right: 5px;
-  margin-bottom: 10px; /* Optional: Adds some space between buttons and bottom of the card */
+  margin-bottom: 10px;
 }
 
 .view-profile-btn {

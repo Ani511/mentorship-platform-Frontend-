@@ -46,8 +46,7 @@ function renderRequests() {
       sentContainer.appendChild(div);
     }
   });
-
-  // Handle buttons
+  
   document.querySelectorAll(".accept-btn").forEach(btn => {
     btn.addEventListener("click", e => {
       const i = +e.target.dataset.index;

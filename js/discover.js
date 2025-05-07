@@ -38,20 +38,20 @@ const dummyUsers = [
   }
 ];
 
-// Load existing users
+// Here loading existing users
 let users = JSON.parse(localStorage.getItem("users")) || [];
 
-// Add dummy users only if their email is not already in localStorage
+// Adding dummy users if their email is not already in localStorage
 dummyUsers.forEach(dummy => {
   if (!users.some(u => u.email === dummy.email)) {
     users.push(dummy);
   }
 });
 
-// Update localStorage
+// Updating localStorage
 localStorage.setItem("users", JSON.stringify(users));
 
-// Show all users except current one
+// Showing all users except self or current one
 if (userList && currentUser) {
   users.forEach(user => {
     if (user.id !== currentUser.id) {
@@ -91,7 +91,7 @@ function renderUsers(filteredUsers) {
     }
   });
 
-  // View profile click handler
+  // Viewing profile click handler
   document.querySelectorAll(".view-profile-btn").forEach(btn => {
     btn.addEventListener("click", (e) => {
       const userId = e.target.dataset.id;
@@ -101,10 +101,9 @@ function renderUsers(filteredUsers) {
   });
 }
 
-// Initial render
 renderUsers(users);
 
-// Filter logic
+// Filtering logic
 function applyFilters() {
   const role = roleFilter.value.toLowerCase();
   const skill = skillFilter.value.toLowerCase();
@@ -119,8 +118,6 @@ function applyFilters() {
 
   renderUsers(filtered);
 }
-
-// Event listeners
 roleFilter.addEventListener("change", applyFilters);
 skillFilter.addEventListener("input", applyFilters);
 interestFilter.addEventListener("input", applyFilters);

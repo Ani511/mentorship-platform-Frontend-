@@ -29,7 +29,7 @@ if (registerForm) {
         errorMsg.style.color = "green";
       }
       setTimeout(() => {
-        window.location.href = "login.html"; // Redirect after 2 seconds
+        window.location.href = "login.html"; //2 secs buffer
       }, 2000);
     }
   });
@@ -56,7 +56,7 @@ if (loginForm) {
         errorMsg.style.color = "green";
       }
       setTimeout(() => {
-        window.location.href = "profile.html"; // Redirect to profile page after login
+        window.location.href = "profile.html"; // same 2 secs buffer before redirection
       }, 2000);
     }
   });
